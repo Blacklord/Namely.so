@@ -101,8 +101,12 @@ section {
     padding: 50px 0;
 }
     
-    section#about {
+    section#home {
         padding-top: 150px;
+    }
+
+    section#projects.row {
+        margin: 0 -15px;
     }
 
     section h2, section h3 {
@@ -110,7 +114,7 @@ section {
         padding: 0 0 20px 0;
     }
 
-    section#projects h4, section#about h4 {
+    section#projects h4, section#home h4 {
         text-align: center;
     }
 
@@ -133,8 +137,23 @@ footer  {
     background-image:         linear-gradient(to bottom, #CDCDCD, #E2E2E2); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }   
 ul.nav {
-    padding: 15px 0 15px 0;
+    padding: 14px 0 14px 0;
 }
+
+    .navbar-inverse .nav .active>a {
+        background-color: #5E6053;
+        border: 1px solid #5E6053;
+        border-radius: 10px;
+    }
+   
+    .navbar-inverse .nav>li>a:hover {
+        color: #616161;
+        background-color: transparent;
+        color: #ffffff;
+        border: 1px solid #858585;
+        border-radius: 10px;
+        background-color: #161616;
+    }
 
 .navbar .brand {
     margin-left: 10px;
@@ -163,6 +182,15 @@ ul.nav {
 
 .navbar .nav {
     float: right;
+}
+
+a.btn.btn-navbar {
+    background-image: linear-gradient(to bottom,#AFAFAF,#858585);
+    border-color: #BBBBBB #BBBBBB #BBBBBB;
+}
+
+nav li a:hover {
+    background-color: green;
 }
 
 /* ==========================================================================
@@ -279,24 +307,57 @@ ul.nav {
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    section#about{
+    section#home{
         padding-top: 10px;
+    }
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 45%;
+        color: #727272;
+    }
+
+    .navbar-inverse .nav-collapse .nav>li>a:hover {
+        background-color: #858585;
+        color: #616161;
+        border-radius: 10px;
     }
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-      section#about{
+      section#home{
         padding-top: 10px;
     }
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 45%;
+        color: #2A2A2A;
+    }
+
+    .navbar-inverse .nav-collapse .nav>li>a:hover {
+        background-color: #858585;
+        color: #616161;
+        border-radius: 10px;
+    }
+
 }
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-      section#about{
+      section#home{
         padding-top: 10px;
     }
-}
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 45%;
+        color: #2A2A2A;
+    }
+    
+    .navbar-inverse .nav-collapse .nav>li>a:hover {
+        background-color: #858585;
+        color: #616161;
+        border-radius: 10px;
+    }
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

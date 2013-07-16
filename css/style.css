@@ -121,7 +121,7 @@ section {
 footer  {
     margin: auto;
     min-height: 40px;
-    max-width: 1170px;
+    max-width: 1200px;
     padding-top: 20px;
     width: auto;
     text-align: center;
@@ -144,6 +144,11 @@ ul.nav {
         background-color: #5E6053;
         border: 1px solid #5E6053;
         border-radius: 10px;
+        text-align: center;
+    }
+
+    .navbar-inverse .nav a{
+        text-align: center;
     }
    
     .navbar-inverse .nav>li>a:hover {
@@ -161,6 +166,7 @@ ul.nav {
 }
 
 .navbar-inverse .btn-navbar {
+
 }
 
 .navbar-inverse .navbar-inner, .navbar-inner {
@@ -186,15 +192,12 @@ ul.nav {
 
 .navbar .nav>li {
     padding: 0 10px 0 0;
+    width: 90px;
 }
 
 a.btn.btn-navbar {
     background-image: linear-gradient(to bottom,#AFAFAF,#858585);
     border-color: #BBBBBB #BBBBBB #BBBBBB;
-}
-
-nav li a:hover {
-    background-color: green;
 }
 
 /* ==========================================================================

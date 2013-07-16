@@ -193,6 +193,7 @@ ul.nav {
 .navbar .nav>li {
     padding: 0 10px 0 0;
     width: 90px;
+    height: 42px;
 }
 
 a.btn.btn-navbar {

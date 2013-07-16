@@ -184,6 +184,10 @@ ul.nav {
     float: right;
 }
 
+.navbar .nav>li {
+    padding: 0 10px 0 0;
+}
+
 a.btn.btn-navbar {
     background-image: linear-gradient(to bottom,#AFAFAF,#858585);
     border-color: #BBBBBB #BBBBBB #BBBBBB;
@@ -312,7 +316,7 @@ nav li a:hover {
     }
     .nav-collapse, .nav-collapse.collapse {
         float: left;
-        left: 45%;
+        left: 41%;
         color: #727272;
     }
 
@@ -320,6 +324,13 @@ nav li a:hover {
         background-color: #858585;
         color: #616161;
         border-radius: 10px;
+    }
+
+    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:focus,
+    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active,
+    .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+        color: #fff;
+        background-color: #858585;
     }
 }
  
@@ -330,7 +341,7 @@ nav li a:hover {
     }
     .nav-collapse, .nav-collapse.collapse {
         float: left;
-        left: 45%;
+        left: 41%;
         color: #2A2A2A;
     }
 
@@ -340,6 +351,12 @@ nav li a:hover {
         border-radius: 10px;
     }
 
+    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:focus,
+    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active,
+    .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+        color: #fff;
+        background-color: #858585;
+    }
 }
  
 /* Landscape phones and down */
@@ -349,7 +366,7 @@ nav li a:hover {
     }
     .nav-collapse, .nav-collapse.collapse {
         float: left;
-        left: 45%;
+        left: 41%;
         color: #2A2A2A;
     }
     
@@ -358,6 +375,14 @@ nav li a:hover {
         color: #616161;
         border-radius: 10px;
     }
+
+    .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:focus,
+    .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active,
+    .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
+        color: #fff;
+        background-color: #858585;
+    }
+}
 
 @media print,
        (-o-min-device-pixel-ratio: 5/4),

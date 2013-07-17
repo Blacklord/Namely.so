@@ -97,76 +97,48 @@ body {
     background-image: url("../img/background.jpg");
 }
 
-section {
-    padding: 50px 0;
+
+/****************************************
+            !! NAVIGATION !! 
+****************************************/
+
+.navbar .nav {
+    float: right;
 }
-    
-    section#home {
-        padding-top: 150px;
+
+    ul.nav {
+        padding: 14px 0 14px 0;
     }
 
-    section#projects.row {
-        margin: 0 -15px;
+    .navbar .nav>li {
+        padding: 0 10px 0 0;
+        width: 90px;
+        height: 42px;
     }
 
-    section h2, section h3 {
-        text-align: center;
-        padding: 0 0 20px 0;
-    }
-
-    section#projects h4, section#home h4 {
-        text-align: center;
-    }
-
-footer  {
-    margin: auto;
-    min-height: 40px;
-    max-width: 1200px;
-    padding-top: 20px;
-    width: auto;
-    text-align: center;
-    border-top: 1px solid #D5D5D5;
+.navbar-inverse .nav .active>a {
+    background-color: #5E6053;
+    border: 1px solid #5E6053;
     border-radius: 10px;
-    -webkit-box-shadow: 0px 0px 1px 1px #CDCDCD; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
-        box-shadow: 0px 0px 1px 1px #CDCDCD; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
-    background-color: #CDCDCD;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#CDCDCD), to(#E2E2E2)); /* Chrome, Safari 4+ */
-    background-image: -webkit-linear-gradient(top, #CDCDCD, #E2E2E2); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
-    background-image:    -moz-linear-gradient(top, #CDCDCD, #E2E2E2); /* Firefox 3.6-15 */
-    background-image:      -o-linear-gradient(top, #CDCDCD, #E2E2E2); /* Opera 11.10-12.00 */
-    background-image:         linear-gradient(to bottom, #CDCDCD, #E2E2E2); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
-}   
-ul.nav {
-    padding: 14px 0 14px 0;
+    text-align: center;
 }
 
-    .navbar-inverse .nav .active>a {
-        background-color: #5E6053;
-        border: 1px solid #5E6053;
-        border-radius: 10px;
-        text-align: center;
-    }
+.navbar-inverse .nav a{
+    text-align: center;
+}
 
-    .navbar-inverse .nav a{
-        text-align: center;
-    }
-   
-    .navbar-inverse .nav>li>a:hover {
-        color: #616161;
-        background-color: transparent;
-        color: #ffffff;
-        border: 1px solid #858585;
-        border-radius: 10px;
-        background-color: #161616;
-    }
+.navbar-inverse .nav>li>a:hover {
+    color: #616161;
+    background-color: transparent;
+    color: #ffffff;
+    border: 1px solid #858585;
+    border-radius: 10px;
+    background-color: #161616;
+}
 
 .navbar .brand {
     margin-left: 10px;
     padding: 21px 1px;
-}
-
-.navbar-inverse .btn-navbar {
-
 }
 
 .navbar-inverse .navbar-inner, .navbar-inner {
@@ -186,19 +158,75 @@ ul.nav {
     background-image:         linear-gradient(to bottom, #CDCDCD, #E2E2E2); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
-.navbar .nav {
-    float: right;
-}
-
-.navbar .nav>li {
-    padding: 0 10px 0 0;
-    width: 90px;
-    height: 42px;
-}
-
 a.btn.btn-navbar {
     background-image: linear-gradient(to bottom,#AFAFAF,#858585);
     border-color: #BBBBBB #BBBBBB #BBBBBB;
+}
+
+/****************************************
+            !! HERO UNIT !! 
+****************************************/
+
+.hero-unit {
+    padding: 20px;
+    margin-top: 115px;
+    background-color: #C1ADD1;
+    border-top: 5px solid #12A251;
+    border-bottom: 5px solid #12A251;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-box-shadow: 0px 0px 5px 0px #474647; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+    box-shadow: 0px 0px 5px 0px #474647; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+}
+
+    .hero-unit p {
+        padding-right: 20px;
+        border-right: 1px solid #797979;
+    }
+
+/****************************************
+              !! CONTENT !! 
+****************************************/
+
+section {
+    padding: 50px 0;
+}
+    
+    section#home {
+        padding-top: 100px;
+    }
+
+    section h2, section h3 {
+        text-align: center;
+        padding: 0 0 20px 0;
+    }
+
+    section#projects h4, section#home h4 {
+        text-align: center;
+    }
+
+/****************************************
+              !! FOOTER !! 
+****************************************/
+
+footer  {
+    margin: auto;
+    min-height: 40px;
+    max-width: 1200px;
+    padding-top: 20px;
+    width: auto;
+    text-align: center;
+    border-top: 1px solid #D5D5D5;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 0px 1px 1px #CDCDCD; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
+        box-shadow: 0px 0px 1px 1px #CDCDCD; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
+    background-color: #CDCDCD;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#CDCDCD), to(#E2E2E2)); /* Chrome, Safari 4+ */
+    background-image: -webkit-linear-gradient(top, #CDCDCD, #E2E2E2); /* Chrome 10-25, iOS 5+, Safari 5.1+ */
+    background-image:    -moz-linear-gradient(top, #CDCDCD, #E2E2E2); /* Firefox 3.6-15 */
+    background-image:      -o-linear-gradient(top, #CDCDCD, #E2E2E2); /* Opera 11.10-12.00 */
+    background-image:         linear-gradient(to bottom, #CDCDCD, #E2E2E2); /* Chrome 26, Firefox 16+, IE 10+, Opera 12.10+ */
 }
 
 /* ==========================================================================

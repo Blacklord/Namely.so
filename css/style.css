@@ -97,6 +97,9 @@ body {
     background-image: url("../img/background.jpg");
 }
 
+a:hover {
+    text-decoration: none;
+}
 
 /****************************************
             !! NAVIGATION !! 
@@ -185,6 +188,10 @@ a.btn.btn-navbar {
         border-right: 1px solid #797979;
     }
 
+    .no_border p {
+        border-right: none;
+    }
+
 /****************************************
               !! CONTENT !! 
 ****************************************/
@@ -194,7 +201,7 @@ section {
 }
     
     section#home {
-        padding-top: 100px;
+        padding-top: 50px auto;
     }
 
     section h2, section h3 {
@@ -205,6 +212,46 @@ section {
     section#projects h4, section#home h4 {
         text-align: center;
     }
+
+    section#projects ul li {
+        display: inline;
+        padding-right: 10px;
+    }
+    
+    section a img {
+        opacity: 0.4;
+    }
+
+    section a:hover img {
+        opacity: 1;
+        -webkit-transition: all 0.2s ease-out;
+        -moz-transition: all 0.2s ease-out;
+        -o-transition: all 0.2s ease-out;
+        transition: all 0.2s ease-out;
+    }
+
+    section a:hover {
+        color: #060082;
+        -webkit-transition: all 0.4s ease-out;
+        -moz-transition: all 0.4s ease-out;
+        -o-transition: all 0.4s ease-out;
+        transition: all 0.4s ease-out;
+        text-decoration: none;
+        }
+        .project_title{
+            padding-bottom: 10px;
+            border-bottom: 1px solid #797979;
+        }
+
+        #projects div.span4 {
+            background-color: #CECECE;
+            border: 1px solid #0F7700;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            box-sizing: border-box;
+            padding: 0 3px;
+        }
 
 /****************************************
               !! FOOTER !! 
@@ -343,9 +390,11 @@ footer  {
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
-    section#home{
-        padding-top: 10px;
+
+    .hero-unit{
+        margin-top: 50px;
     }
+
     .nav-collapse, .nav-collapse.collapse {
         float: left;
         left: 41%;
@@ -368,9 +417,22 @@ footer  {
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
-      section#home{
-        padding-top: 10px;
+    
+    section#home {
+        padding: 20px 0px;
+        margin-top: 20px;
     }
+
+    .hero-unit p {
+        border: none;
+        padding: 0;
+    }
+
+    .hero-unit{
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
     .nav-collapse, .nav-collapse.collapse {
         float: left;
         left: 41%;
@@ -393,9 +455,16 @@ footer  {
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-      section#home{
-        padding-top: 10px;
+      
+    section#home {
+        padding: 20px 10px;
     }
+    
+    .hero-unit{
+        padding-top: 10px;
+        margin-top: 20px;
+    }
+
     .nav-collapse, .nav-collapse.collapse {
         float: left;
         left: 41%;

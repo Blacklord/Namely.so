@@ -97,7 +97,12 @@ body {
     background-image: url("../img/background.jpg");
 }
 
+a {
+    color: #392D2D;
+}
+
 a:hover {
+    color: #8C0003;
     text-decoration: none;
 }
 
@@ -182,13 +187,21 @@ a.btn.btn-navbar {
     -webkit-box-shadow: 0px 0px 5px 0px #474647; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
     box-shadow: 0px 0px 5px 0px #474647; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
+    
+    .hero-unit div {
+        text-align: center;
+    }
+    
+    .hero-unit section p.no_border {
+        margin-left: 30px;
+    }
 
     .hero-unit p {
         padding-right: 20px;
         border-right: 1px solid #797979;
     }
-
-    .no_border p {
+    
+    p.no_border, .no_border p {
         border-right: none;
     }
 
@@ -196,21 +209,45 @@ a.btn.btn-navbar {
               !! CONTENT !! 
 ****************************************/
 
+h2 {
+    background-image: url("../img/line.png");
+    background-repeat: repeat-x;
+    background-position: 0 30%;
+    margin-left: 30px;
+}
+
+.no_background {
+    background-image: url("../img/background.jpg");
+    padding: 0 10px;
+}
+
+.callout {
+    padding: 10px 30px;
+    color: #BABCB1;
+    background-color: #180CB8;
+
+}
 section {
     padding: 50px 0;
 }
+    section h1{
+        text-align: center;
+        padding: 0 0 50px 0;
+    }
+
+    section h2, section h3, section#projects h4, section#home h4 {
+        text-align: center;
+    }
+
+    section h2 {
+        padding: 10px 0 50px 0;
+    }
     
-    section#home {
-        padding-top: 50px auto;
+    section#home.row {
+        margin-top: 50px;
     }
-
-    section h2, section h3 {
-        text-align: center;
-        padding: 0 0 20px 0;
-    }
-
-    section#projects h4, section#home h4 {
-        text-align: center;
+    section#projects .row {
+        margin: 0px;
     }
 
     section#projects ul li {
@@ -218,11 +255,12 @@ section {
         padding-right: 10px;
     }
     
-    section a img {
+    section#projects a img {
         opacity: 0.4;
     }
 
-    section a:hover img {
+    section#projects a:hover img {
+        color: #8C0003;
         opacity: 1;
         -webkit-transition: all 0.2s ease-out;
         -moz-transition: all 0.2s ease-out;
@@ -230,21 +268,22 @@ section {
         transition: all 0.2s ease-out;
     }
 
-    section a:hover {
-        color: #060082;
+    section a:hover { 
+        color: #8C0003;
         -webkit-transition: all 0.4s ease-out;
         -moz-transition: all 0.4s ease-out;
         -o-transition: all 0.4s ease-out;
         transition: all 0.4s ease-out;
         text-decoration: none;
         }
+
         .project_title{
             padding-bottom: 10px;
             border-bottom: 1px solid #797979;
         }
 
-        #projects div.span4 {
-            background-color: #CECECE;
+        #projects .background {
+            background-color: #E1E1E1;
             border: 1px solid #0F7700;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -390,6 +429,10 @@ footer  {
  
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
+    
+    section#home.row {
+        margin-top: 0;
+    }
 
     .hero-unit{
         margin-top: 50px;
@@ -418,9 +461,8 @@ footer  {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     
-    section#home {
-        padding: 20px 0px;
-        margin-top: 20px;
+    section#home.row {
+        margin-top: 0;
     }
 
     .hero-unit p {
@@ -455,9 +497,9 @@ footer  {
  
 /* Landscape phones and down */
 @media (max-width: 480px) {
-      
-    section#home {
-        padding: 20px 10px;
+    
+    section#home.row {
+        margin-top: 0;
     }
     
     .hero-unit{

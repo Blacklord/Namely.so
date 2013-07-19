@@ -188,23 +188,14 @@ a.btn.btn-navbar {
     box-shadow: 0px 0px 5px 0px #474647; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
     
-    .hero-unit div {
+    .hero-unit .background {
+        padding-top: 10px;
         text-align: center;
     }
-    
-    .hero-unit section p.no_border {
+
+    .hero-unit section p.margin_fix {
         margin-left: 30px;
     }
-
-    .hero-unit p {
-        padding-right: 20px;
-        border-right: 1px solid #797979;
-    }
-    
-    p.no_border, .no_border p {
-        border-right: none;
-    }
-
 /****************************************
               !! CONTENT !! 
 ****************************************/
@@ -282,13 +273,35 @@ section {
             border-bottom: 1px solid #797979;
         }
 
-        #projects .background {
-            background-color: #E1E1E1;
-            border: 1px solid #0F7700;
+        .background {
+            color: #D0D1CB;
+            background-color: #7A2929;
+            border: 2px solid #110053;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
             border-radius: 3px;
-            box-sizing: border-box;
+            -moz-box-shadow: 0 0 5px #6B6B6B;
+            -webkit-box-shadow: 0 0 5px#6B6B6B;
+            box-shadow: 0 0 5px #6B6B6B;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
+            padding: 0 5px;
+        }
+
+        #projects .background {
+            color: #BBBDB3;
+            background-color: #787878;
+            border: 1px solid #B70000;
+            -webkit-border-radius: 3px;
+            -moz-border-radius: 3px;
+            border-radius: 3px;
+            -moz-box-shadow: 0 0 5px #6B6B6B;
+            -webkit-box-shadow: 0 0 5px#6B6B6B;
+            box-shadow: 0 0 2px #6B6B6B;
+            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+            box-sizing: border-box;         /* Opera/IE 8+ */
             padding: 0 3px;
         }
 

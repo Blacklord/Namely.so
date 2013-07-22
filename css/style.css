@@ -124,16 +124,15 @@ a:hover {
         height: 42px;
     }
 
-.navbar-inverse .nav .active>a {
-    background-color: #5E6053;
-    border: 1px solid #5E6053;
-    border-radius: 10px;
-    text-align: center;
-}
-
 .navbar-inverse .nav a{
     text-align: center;
 }
+    .navbar-inverse .nav .active>a {
+        background-color: #5E6053;
+        border: 1px solid #5E6053;
+        border-radius: 10px;
+        text-align: center;
+    }
 
 .navbar-inverse .nav>li>a:hover {
     color: #616161;
@@ -187,15 +186,32 @@ a.btn.btn-navbar {
     -webkit-box-shadow: 0px 0px 5px 0px #474647; /* Android 2.3+, iOS 4.0.2-4.2, Safari 3-4 */
     box-shadow: 0px 0px 5px 0px #474647; /* Chrome 6+, Firefox 4+, IE 9+, iOS 5+, Opera 10.50+ */
 }
-    
+    .hero-unit h1 {
+        margin-bottom: 50px;
+        line-height: 1.2;
+        letter-spacing: -1px;
+    }
+
     .hero-unit .background {
-        padding-top: 10px;
+        padding-top: 30px;
+        margin-bottom: 30px;
         text-align: center;
     }
 
-    .hero-unit section p.margin_fix {
-        margin-left: 30px;
+    .hero-unit .offset1 {
+        margin-left: 12.6%;
     }
+    
+    .title {
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        width: 60%;
+        margin: 0 20%;
+        color: #B4B4B4;
+        background-color: #0D1C3E;
+    }
+
 /****************************************
               !! CONTENT !! 
 ****************************************/
@@ -207,26 +223,16 @@ h2 {
     margin-left: 30px;
 }
 
-.no_background {
-    background-image: url("../img/background.jpg");
-    padding: 0 10px;
-}
+    h2 .no_background {
+        background-image: url("../img/background.jpg");
+        padding: 0 10px;
+    }
 
-.callout {
-    padding: 10px 30px;
-    color: #BABCB1;
-    background-color: #180CB8;
-
-}
 section {
     padding: 50px 0;
 }
-    section h1{
-        text-align: center;
-        padding: 0 0 50px 0;
-    }
 
-    section h2, section h3, section#projects h4, section#home h4 {
+    section h1, section h2, section h3, section#projects h4, section#home h4 {
         text-align: center;
     }
 
@@ -237,15 +243,7 @@ section {
     section#home.row {
         margin-top: 50px;
     }
-    section#projects .row {
-        margin: 0px;
-    }
 
-    section#projects ul li {
-        display: inline;
-        padding-right: 10px;
-    }
-    
     section#projects a img {
         opacity: 0.4;
     }
@@ -259,6 +257,29 @@ section {
         transition: all 0.2s ease-out;
     }
 
+    
+    .responsive_border {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+    }
+        ul.responsive_border {
+            margin: 0;
+        }
+
+        .responsive_border li {
+            display: block;
+            padding: 10px 0;
+            text-align: center;
+            margin: 0;
+            display: table-cell;
+            border-right: 1px solid red;
+        }
+
+        .responsive_border li:last-child {
+            border: none;
+        }
+
     section a:hover { 
         color: #8C0003;
         -webkit-transition: all 0.4s ease-out;
@@ -270,28 +291,28 @@ section {
 
         .project_title{
             padding-bottom: 10px;
-            border-bottom: 1px solid #797979;
+            border-bottom: 1px solid #F20202;
         }
 
-        .background {
-            color: #D0D1CB;
-            background-color: #7A2929;
-            border: 2px solid #110053;
-            -webkit-border-radius: 3px;
-            -moz-border-radius: 3px;
-            border-radius: 3px;
-            -moz-box-shadow: 0 0 5px #6B6B6B;
-            -webkit-box-shadow: 0 0 5px#6B6B6B;
-            box-shadow: 0 0 5px #6B6B6B;
-            -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-            -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-            box-sizing: border-box;         /* Opera/IE 8+ */
-            padding: 0 5px;
-        }
+    .background {
+        color: #D0D1CB;
+        background-color: #7A2929;
+        border: 2px solid #110053;
+        -webkit-border-radius: 3px;
+        -moz-border-radius: 3px;
+        border-radius: 3px;
+        -moz-box-shadow: 0 0 5px #6B6B6B;
+        -webkit-box-shadow: 0 0 5px#6B6B6B;
+        box-shadow: 0 0 5px #6B6B6B;
+        -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+        -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+        box-sizing: border-box;         /* Opera/IE 8+ */
+        margin-bottom: 30px;
+    }
 
         #projects .background {
-            color: #BBBDB3;
-            background-color: #787878;
+            color: #303030;
+            background-color: #D8D8D8;
             border: 1px solid #B70000;
             -webkit-border-radius: 3px;
             -moz-border-radius: 3px;
@@ -302,8 +323,17 @@ section {
             -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
             -moz-box-sizing: border-box;    /* Firefox, other Gecko */
             box-sizing: border-box;         /* Opera/IE 8+ */
-            padding: 0 3px;
         }
+
+            #projects .background p {
+                padding: 0 10px;
+            }
+
+            #projects .background a img {
+                box-sizing: border-box;
+                padding: 0 5px 5px;
+                border-bottom: 1px solid #B70000;
+            }
 
 /****************************************
               !! FOOTER !! 
@@ -457,6 +487,15 @@ footer  {
         color: #727272;
     }
 
+    .title {
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        width: 70%;
+        margin: 0 15%;
+        background-color: #0D1C3E;
+    }
+
     .navbar-inverse .nav-collapse .nav>li>a:hover {
         background-color: #858585;
         color: #616161;
@@ -478,14 +517,27 @@ footer  {
         margin-top: 0;
     }
 
-    .hero-unit p {
-        border: none;
-        padding: 0;
-    }
-
     .hero-unit{
         padding-top: 10px;
         margin-top: 20px;
+    }
+
+        .hero-unit p {
+            border: none;
+            padding: 0;
+        }
+
+        .hero-unit .offset1 {
+            margin-left: auto;
+        }
+
+    .title {
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        width: 76%;
+        margin: 0 12%;
+        background-color: #0D1C3E;
     }
 
     .nav-collapse, .nav-collapse.collapse {

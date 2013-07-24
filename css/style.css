@@ -201,6 +201,7 @@ a.btn.btn-navbar {
     .hero-unit section {
         padding: 20px 0 0 0;
     }
+
     .hero-unit h1 {
         margin-bottom: 20px;
         line-height: 1.2;
@@ -217,7 +218,7 @@ a.btn.btn-navbar {
         margin-left: 12.6%;
     }
     
-    .title {
+    .hero_title {
         position: relative;
         overflow: visible;
         z-index: 1;
@@ -225,6 +226,15 @@ a.btn.btn-navbar {
         margin: 0 20%;
         color: #B4B4B4;
         background-color: #0D1C3E;
+    }
+
+    .title {
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        width: 35%;
+        margin: 0 32.5%;
+        background-image: url("../img/background.jpg");
     }
 
 /****************************************
@@ -244,7 +254,7 @@ h2 {
     }
 
 section {
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
     section a:hover { 
@@ -265,12 +275,23 @@ section {
     }
     
     section#home.row {
-        margin-top: 50px;
+        margin-top: 100px;
     }
 
     section#projects a img {
         opacity: 0.4;
     }
+    section#projects {
+        position: relative;
+    }
+
+        section#projects .divider{
+            position: absolute;
+            left: 51.2%;
+            top: 15.7%;
+            bottom: 2%;
+            border: 1px solid #A8A8A8;
+        }
 
         section#projects a:hover img {
             opacity: 1;
@@ -361,6 +382,7 @@ footer  {
     margin: auto;
     min-height: 40px;
     max-width: 1200px;
+    margin-top: 30px;
     padding-top: 20px;
     width: auto;
     text-align: center;
@@ -495,6 +517,10 @@ footer  {
         margin-top: 0;
     }
 
+    h2 {
+        margin-left: 20px;
+    }
+
     .hero-unit{
         margin-top: 50px;
     }
@@ -520,7 +546,7 @@ footer  {
             background-color: #383838;
         }
 
-    .title {
+    .hero_title {
         position: relative;
         overflow: visible;
         z-index: 1;
@@ -540,6 +566,10 @@ footer  {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
     
+    h2 {
+        margin-left: 0px;
+    }
+
     section {
         padding: 10px 0;
     }
@@ -551,6 +581,10 @@ footer  {
     section#projects.row div {
         margin-bottom: 10px;
     }
+
+    section#projects .divider{
+            border: none;
+        }
 
     .hero-unit {
         padding-top: 10px;
@@ -566,13 +600,22 @@ footer  {
             margin-left: auto;
         }
 
-    .title {
+    .hero_title {
         position: relative;
         overflow: visible;
         z-index: 1;
         width: 76%;
         margin: 0 12%;
         background-color: #0D1C3E;
+    }
+    
+     .title {
+        position: relative;
+        overflow: visible;
+        z-index: 1;
+        width: auto;
+        margin: 0 30%;
+        background-image: url("../img/background.jpg");
     }
 
     .nav-collapse, .nav-collapse.collapse {

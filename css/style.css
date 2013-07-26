@@ -196,6 +196,7 @@ header h1 {
 a.btn.btn-navbar {
     background-image: linear-gradient(to bottom,#E0E0E0,#D3D3D3);
     border-color: #BBBBBB #BBBBBB #BBBBBB;
+    margin: 20px;
 }
 
     .navbar .btn-navbar .icon-bar {
@@ -222,11 +223,6 @@ a.btn.btn-navbar {
     .navbar-inverse .nav-collapse .nav>li>a:hover {
         color: #890306;
         background-color: #B3B4A9;
-    }
-
-    .nav-collapse, .nav-collapse.collapse {
-        float: left;
-        left: 43%;
     }
 
 /****************************************
@@ -563,6 +559,11 @@ footer  {
 /* Portrait tablet to landscape and desktop */
 @media (min-width: 768px) and (max-width: 979px) {
     
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 43%;
+    }
+
     section#home.row {
         margin-top: 0;
     }
@@ -581,12 +582,16 @@ footer  {
         z-index: 1;
         width: 70%;
         margin: 0 15%;
-        background-color: #0D1C3E;
     }
 }
  
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+    
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 43%;
+    }
 
     .hero-unit {
         padding-top: 10px;
@@ -611,7 +616,6 @@ footer  {
         z-index: 1;
         width: 76%;
         margin: 0 12%;
-        background-color: #0D1C3E;
     }
     
      .title {
@@ -647,6 +651,11 @@ footer  {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+    
+    .nav-collapse, .nav-collapse.collapse {
+        float: left;
+        left: 43%;
+    }
     
     .hero-unit{
         padding-top: 10px;
